@@ -1,0 +1,133 @@
+:root {
+  --color-primary: #4b0082;
+  --color-secondary: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: monospace, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #821cca8f;
+  max-width: 80rem;
+  height: 70%;
+  font-size: 2.75rem;
+  padding: 1rem 3.5rem;
+  box-shadow: 0 1rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+/* top is flex's 1st item starts here*/
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.fa-quote-left {
+  font-size: 3rem;
+  color: black;
+  align-self: flex-start;
+  transform: translate(0, 1rem);
+  font-size: 5rem;
+}
+.copy-Quote {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 0 5px 0 5px;
+  transform: translate(3.4rem, -1rem);
+  font-size: 1.8rem;
+  height: 4rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 1rem 1rem 2px rgba(0, 0, 0, 0.1);
+}
+.copy-Quote:hover {
+  cursor: pointer;
+}
+.copy-Quote .btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-primary);
+}
+/* top ends here */
+
+/* quote-box is flex's 2nd item  starts here*/
+
+.qoute-box {
+  font-weight: 600;
+  margin: 1rem 0;
+  transform: translate(0, 5rem);
+}
+/* quote-box ends here */
+
+/* auther-box is flex's 2nd item  starts here*/
+.auther-box {
+  margin: 1.2rem 0;
+  font-style: italic;
+  font-size: 2.5rem;
+  align-self: flex-end;
+  transform: translate(0, 5rem);
+}
+.fa-quote-right {
+  color: black;
+  transform: translate(4rem, -1rem);
+  font-size: 5rem;
+}
+
+.btn-new-quote {
+  width: 110%;
+  font-family: monospace, sans-serif;
+  background-color: var(--color-secondary);
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  color: var(--color-primary);
+  padding: 0.5rem 0;
+  border-radius: 0 0 5px 5px;
+  transform: translate(0, 3rem);
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+/* media Queries */
+@media screen and (max-width: 50em) {
+  .container {
+    margin: 0 1rem;
+  }
+  .btn-new-quote {
+    width: 110%;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .container {
+    font-size: 2rem;
+  }
+  .auther-box {
+    font-size: 1.7rem;
+  }
+  .btn-new-quote {
+    width: 130%;
+  }
+}

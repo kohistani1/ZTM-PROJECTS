@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Quote Generator</title>
+    <script defer src="App.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- item 1  -->
+      <div class="top">
+        <i class="fas fa-quote-left"></i>
+        <div class="copy-Quote">
+          <i class="fa fa-copy"></i>
+          <button class="btn">copy quote</button>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="qoute-box" id="quote-container">
+        <span id="quote-text"> </span>
+      </div>
+      <!-- item 3-->
+      <div class="auther-box" id="auther-box">
+        <i class="fas fa-quote-right"></i><br />
+        <span id="auther-text"></span>
+      </div>
+      <button class="btn btn-new-quote" id="btn-new-quote">New Quote</button>
+    </div>
+  </body>
+</html>
